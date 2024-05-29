@@ -1,0 +1,46 @@
+:root, * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+}
+
+main {
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+}
+
+section {
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+}
+
+div, span {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background: darkblue;
+}
+
+section:nth-child(even) span:nth-child(odd) {
+    background: turquoise;
+}
+
+section:nth-child(odd) span:nth-child(even) {
+    background: turquoise;
+}
